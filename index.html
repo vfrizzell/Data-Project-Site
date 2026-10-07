@@ -1,19 +1,86 @@
-<h1>Welcome to my data project.</h1>
-<p>This site is a testing site to host my Excel files and charts.</p>
+<h1>Welcome to Veronique's Portfolio</h1>
+<h3><i>"to explore strange new worlds; to seek out new life and new civilizations; to boldly go where no man has gone before!"</i></h3>
+<br>
+<p>I'm in finance, more specifically financial planning and analysis (FP&A) and the aforementioned quote is not typically a sentiment of such professionals.But that opening Star Trek monologue has always thrilled me.</p>
 <br>
 <br>
-<p>Option 1 - testing how to display my files. This option is a download option.</p>
-<a href="Data Viz on GDP - For Claudine.xlsx" download>Download the Excel file</a>
+<p>And that seems to be the sentiment I bring to my work: exploring new tools and ideas in order to elevate my work.</p>
 <br>
 <br>
-<p>Option 2 - testing how to display my files via the html method. I upload a html version of my file into the repository.</p>
-<a href="Stats about 250th anniversary - CB.htm">View Excel HTML</a>
+<p>That's what I'm trying to convey with these projects listed on this page. Whether it's exploring data, new ideas, or new techniques, there's a sense of wonder within me that I want to share and hope brings value.</p>
 <br>
 <br>
-<p>Option 2.b - testing the iframe method of displaying the html version of Excel.</p>
-<iframe src="Stats about 250th anniversary - CB.htm" width="100%" height="800"></iframe>
+<p>This GitHub page arose out of an request to do a project together - namely build a portfolio of our works. She's in the field of data analysis, economics and business intelligence and someone had told her that she needed a portfolio, either on the web or on GitHub. Since then, life has interfered so she is no longer working on building her portfolio so I'm going forth alone.</p>
 <br>
 <br>
-<p>Option 3 - Embed Excel from OneDrive. This should allow interactivity.</p>
-<iframe src="https://1drv.ms/x/c/3b76b69251f878a2/IQSMfnG2vFLHT7Qh68D551Z_ARbRaSCftTUuSaCXJPVl1TA" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
+<h2>My Portfolio</h2>
+<h3>Project 1: I bet you didn't realize this!</h3>
+<br>
+<p>We've all heard about GDP numbers and that the US' GDP soars above all other countries. But...are you aware of how much US' GDP soars? I was surprised after putting the data in visual terms.</p>
+<br>
+<br>
+<p><u>Background</u></p>
+<br>
+<p>Since her starting background was in economics, she suggested doing something with the IMF data.</p>
+<br>
+<br>
+<p><u>The Data</u></p>
+<p>IMF offers the data in Excel format although it looks like at some point in the future they will offer some other form of access. In the Excel, the layout of the data is not typical, so exploration of the spreadsheet is required. Just to provide a feel for what is in the spreadsheet, there are information on GDP, unemployment rate, employed persons, net debt, output gap, general government revenue and so on. There's a LOT of information in the spreadsheet.</p>
+<br>
+<p>I decided to first explore GDP which included as options nominal, real, in US dollars, in countries' denominations, etc.</p>
+<br>
+<p>I kept the original Excel download untouched and used Power Query to pull in and clean the data. After Power Query, I loaded the resulting data into a pivot table where I filtered for the top 10 countries' GDP in US$. From there a chart was created. </p>
+<br>
+<p>And that's when I was shocked by how the US' GDP blew away the rest of the world. I had always heard about US' GDP being number 1 but I didn't realize the extent, especially since 1995. The second surprise was China's GDP overtaking Japan to take second place around 2010.</p>
+<br>
+<p>After those two surprises, I decided to look at the GDP from a population perspective - the per capita GDP - to see if taking into account population levels changes things. The second table and corresponding chart came into play. The IMF dataset includes per capita GDP so I could use it directly without introducing a population table. In this series, I kept the same top 10 countries for comparison purpose.</p>
+<br>
+<p>Again, it is shocking to me how the US' per capita GDP is far and away above all other countries in the world, especially after 2013. Even though I hear time and again how economy works really well, it is striking to see visually.</p>
+<br>
+<p>Here, I do see where despite China's effort to bring up its GDP, on a per capita basis, its standing drops to 9th, ahead of only Brazil. I can see why it is trying to "take over the world". China's population is roughly four times that of the US and thus needs greater GDP in order to reach US' level of per capita GDP.</p>
+<br>
+<p>An interesting question comes to mind: India's recent economic success is nowhere in the chart. Their recent emergence onto the world hasn't progressed enough.</p>
+<br>
+<p>And that was the end of the project as the other coworker's life got in the way.</p>
+<br>
+<p><u>The File</u></p>
+<p>Here's the file you can download. You will find charts and if you want to see the table itself, flip the filter to "yes" in cells P5 and P58. There are hidden tabs that contain pivot tables as well as the original data pull. You can unhide the tabs. What you can't do is refresh the data because the data actually comes from an Excel file.</p>
+<a href="Data Viz on GDP.xlsx" download>Download the Excel file</a>
+<p>And you can view the file down below.</p>
+<iframe src="https://1drv.ms/x/c/3b76b69251f878a2/IQQnOQAffW5WSLyW3nuyWX0LAXJt_fXU2bSUqmXQT9vukqc" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
+<br>
+<br>
+<h3>Project 2: Was 1976 better than 2026?</h3>
+<p>Sometimes your memories can fool you. But when you dig into the numbers...you might be surprised.</p>
+<br>
+<br>
+<p><u>Background</u></p>
+<br>
+<p>This year's 4th of July was the 250th anniversary of our independence and everyone around me was in the dumps due to a difficult job market, the Iran war and the rising costs of groceries and gas. But I saw a video where a historian noted that in 1976 - our 200th anniversary - we suffered similar difficulties. We had gas lines and the Nixon affair at that time.</p>
+<br>
+<p>I thought that would be an interesting project to see how economic conditions in 2026 compared to 1976 which was the <i>200th</i> anniversary. My memory of 1976 was kind of rosy but then, I was a child back then.</p>
+<br>
+<br>
+<p><u>The Data</u></p>
+<p>All of the data here comes from FRED (Federal Reserve Economic Data) and in this project, I'm drilling into the website rather than downloading files. For this project I looked into the unemployment, the inflation and the interest rate to see how the two years compared. After I used Power Query to pull in multiple sets of data, I loaded them into pivot tables and then filtered for 1976 and 2026. For some pivot tables, I had to do some manipulations to have same units (convert millions into dollars) or same time period (convert months to quarterly) when combining tables.</p>
+<br>
+<p><u>Thoughts on Results</u></p>
+<p>There are 6 tabs in the file, one of which contains all of the pivot tables created for gathering information or building charts.</p>
+<br>
+<p>At first blush, it looks like 1976 was worse than 2026!</p>
+<br>
+<p>That generated a LOT of pushback. Mainly along the lines of "I don't believe the numbers".</p>
+<br>
+<p>The times are dramatically different. 2026 is far more technologically advance with internet, computers and now AI. The societal dynamism is different too with the current polarization. Down below the initial results, I addressed some of the pushback by exploring other aspects of the question. Quite frequently, further exploration still came back to 1976 was numerically worse than 2026.</p>
+<br>
+<p>Kind of shocking to see that.</p>
+<br>
+<p><u>The File</u></p>
+<p>Here's the downloadable version.</p>
+<a href="Data Viz on GDP.xlsx" download>Download the Excel file</a>
+<br>
+<p>And here you can view the file. Enjoy!</p>
+<iframe src="https://1drv.ms/x/c/3b76b69251f878a2/IQQnOQAffW5WSLyW3nuyWX0LAXJt_fXU2bSUqmXQT9vukqc" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
+
+
 
