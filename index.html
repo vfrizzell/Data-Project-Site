@@ -1,87 +1,448 @@
-<h1>Welcome to Veronique's Portfolio</h1>
-<h3><i>"to explore strange new worlds; to seek out new life and new civilizations; to boldly go where no man has gone before!"</i></h3>
-<br>
-<p>I'm in finance, more specifically financial planning and analysis (FP&A) and the aforementioned quote is not typically a sentiment of such professionals.But that opening Star Trek monologue has always thrilled me.</p>
-<br>
-<br>
-<p>And that seems to be the sentiment I bring to my work: exploring new tools and ideas in order to elevate my work.</p>
-<br>
-<br>
-<p>That's what I'm trying to convey with these projects listed on this page. Whether it's exploring data, new ideas, or new techniques, there's a sense of wonder within me that I want to share and hope brings value.</p>
-<br>
-<br>
-<p>This GitHub page arose out of an request to do a project together - namely build a portfolio of our works. She's in the field of data analysis, economics and business intelligence and someone had told her that she needed a portfolio, either on the web or on GitHub. Since then, life has interfered so she is no longer working on building her portfolio so I'm going forth alone.</p>
-<br>
-<br>
-<h2>My Portfolio</h2>
-<h3>Project 1: I bet you didn't realize this!</h3>
-<br>
-<p>We've all heard about GDP numbers and that the US' GDP soars above all other countries. But...are you aware of how much US' GDP soars? I was surprised after putting the data in visual terms.</p>
-<br>
-<br>
-<p><u>Background</u></p>
-<br>
-<p>Since her starting background was in economics, she suggested doing something with the IMF data.</p>
-<br>
-<br>
-<p><u>The Data</u></p>
-<p>IMF offers the data in Excel format although it looks like at some point in the future they will offer some other form of access. In the Excel, the layout of the data is not typical, so exploration of the spreadsheet is required. Just to provide a feel for what is in the spreadsheet, there are information on GDP, unemployment rate, employed persons, net debt, output gap, general government revenue and so on. There's a LOT of information in the spreadsheet.</p>
-<br>
-<p>I decided to first explore GDP which included as options nominal, real, in US dollars, in countries' denominations, etc.</p>
-<br>
-<p>I kept the original Excel download untouched and used Power Query to pull in and clean the data. After Power Query, I loaded the resulting data into a pivot table where I filtered for the top 10 countries' GDP in US$. From there a chart was created. </p>
-<br>
-<p>And that's when I was shocked by how the US' GDP blew away the rest of the world. I had always heard about US' GDP being number 1 but I didn't realize the extent, especially since 1995. The second surprise was China's GDP overtaking Japan to take second place around 2010.</p>
-<br>
-<p>After those two surprises, I decided to look at the GDP from a population perspective - the per capita GDP - to see if taking into account population levels changes things. The second table and corresponding chart came into play. The IMF dataset includes per capita GDP so I could use it directly without introducing a population table. In this series, I kept the same top 10 countries for comparison purpose.</p>
-<br>
-<p>Again, it is shocking to me how the US' per capita GDP is far and away above all other countries in the world, especially after 2013. Even though I hear time and again how economy works really well, it is striking to see visually.</p>
-<br>
-<p>Here, I do see where despite China's effort to bring up its GDP, on a per capita basis, its standing drops to 9th, ahead of only Brazil. I can see why it is trying to "take over the world". China's population is roughly four times that of the US and thus needs greater GDP in order to reach US' level of per capita GDP.</p>
-<br>
-<p>An interesting question comes to mind: India's recent economic success is nowhere in the chart. Their recent emergence onto the world hasn't progressed enough.</p>
-<br>
-<p>And that was the end of the project as the other coworker's life got in the way.</p>
-<br>
-<p><u>The File</u></p>
-<p>Here's the file you can download. You will find charts and if you want to see the table itself, flip the filter to "yes" in cells P5 and P58. There are hidden tabs that contain pivot tables as well as the original data pull. You can unhide the tabs. What you can't do is refresh the data because the data actually comes from an Excel file.</p>
-<a href="Data Viz on GDP.xlsx" download>Download the Excel file</a>
-<p>And you can view the file down below.</p>
-<iframe src="https://1drv.ms/x/c/3b76b69251f878a2/IQQnOQAffW5WSLyW3nuyWX0LAXJt_fXU2bSUqmXQT9vukqc" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
-<br>
-<br>
-<h3>Project 2: Was 1976 better than 2026?</h3>
-<p>Sometimes your memories can fool you. But when you dig into the numbers...you might be surprised.</p>
-<br>
-<br>
-<p><u>Background</u></p>
-<br>
-<p>This year's 4th of July was the 250th anniversary of our independence and everyone around me was in the dumps due to a difficult job market, the Iran war and the rising costs of groceries and gas. But I saw a video where a historian noted that in 1976 - our 200th anniversary - we suffered similar difficulties. We had gas lines and the Nixon affair at that time.</p>
-<br>
-<p>I thought that would be an interesting project to see how economic conditions in 2026 compared to 1976 which was the <i>200th</i> anniversary. My memory of 1976 was kind of rosy but then, I was a child back then.</p>
-<br>
-<br>
-<p><u>The Data</u></p>
-<p>All of the data here comes from FRED (Federal Reserve Economic Data) and in this project, I'm drilling into the website rather than downloading files. For this project I looked into the unemployment, the inflation and the interest rate to see how the two years compared. After I used Power Query to pull in multiple sets of data, I loaded them into pivot tables and then filtered for 1976 and 2026. For some pivot tables, I had to do some manipulations to have same units (convert millions into dollars) or same time period (convert months to quarterly) when combining tables.</p>
-<br>
-<p><u>Thoughts on Results</u></p>
-<p>There are 6 tabs in the file, one of which contains all of the pivot tables created for gathering information or building charts.</p>
-<br>
-<p>At first blush, it looks like 1976 was worse than 2026!</p>
-<br>
-<p>That generated a LOT of pushback. Mainly along the lines of "I don't believe the numbers".</p>
-<br>
-<p>The times are dramatically different. 2026 is far more technologically advance with internet, computers and now AI. The societal dynamism is different too with the current polarization. Down below the initial results, I addressed some of the pushback by exploring other aspects of the question. Quite frequently, further exploration still came back to 1976 was numerically worse than 2026.</p>
-<br>
-<p>Kind of shocking to see that.</p>
-<br>
-<p><u>The File</u></p>
-<p>Here's the downloadable version.</p>
-<a href="Stats about 250th anniversary.xlsx" download>Download the Excel file</a>
-<br>
-<p>And here you can view the file. Enjoy!</p>
-<iframe src="https://1drv.ms/x/c/3b76b69251f878a2/IQR3cxDrTCdzQJLd1lRQIdHcAfyJHdKEjtmnreaVjhjFV2o" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Portfolio of Veronique Frizzell, an FP&A and analytics professional specializing in financial analysis, Power BI, Excel, Power Query, and data storytelling."
+    >
+
+    <title>Veronique Frizzell | Finance and Data Analytics Portfolio</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header class="site-header">
+        <div class="container nav-container">
+
+            <a class="site-logo" href="index.html">
+                VF
+            </a>
+
+            <nav class="site-nav" aria-label="Main navigation">
+                <a href="#projects">Projects</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact">Contact</a>
+            </nav>
+
+        </div>
+    </header>
 
 
+    <main>
+
+        <!-- Hero -->
+        <section class="hero">
+            <div class="container hero-grid">
+
+                <div class="hero-content">
+
+                    <p class="eyebrow">
+                        Finance • Analytics • Data Storytelling
+                    </p>
+
+                    <h1>
+                        Turning complex data into clear,
+                        decision-ready insights.
+                    </h1>
+
+                    <p class="hero-description">
+                        I am an FP&amp;A and analytics professional who combines
+                        financial experience, analytical judgment, and
+                        technical tools to investigate business and economic
+                        questions.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a class="button button-primary" href="#projects">
+                            View My Projects
+                        </a>
+
+                        <a class="button button-secondary" href="#about">
+                            More About Me
+                        </a>
+                    </div>
+
+                </div>
+
+                <aside class="hero-panel">
+                    <p class="panel-label">What I work with</p>
+
+                    <ul class="hero-skill-list">
+                        <li>Financial planning and analysis</li>
+                        <li>Economic and business research</li>
+                        <li>Power BI and data visualization</li>
+                        <li>Excel and Power Query automation</li>
+                        <li>Analytical storytelling</li>
+                    </ul>
+                </aside>
+
+            </div>
+        </section>
 
 
+        <!-- Featured Projects -->
+        <section class="section" id="projects">
+            <div class="container">
+
+                <div class="section-heading">
+                    <p class="eyebrow">Selected work</p>
+
+                    <h2>Featured Projects</h2>
+
+                    <p>
+                        These projects demonstrate how I frame questions,
+                        evaluate data, make analytical decisions, and
+                        communicate the resulting insights.
+                    </p>
+                </div>
+
+
+                <div class="project-grid">
+
+                    <!-- 1976 vs 2026 -->
+                    <article class="project-card featured-project">
+
+                        <div class="project-image placeholder-image">
+                            <span>1976 vs. 2026 project screenshot</span>
+                        </div>
+
+                        <div class="project-card-content">
+
+                            <div class="project-status">
+                                Featured research project
+                            </div>
+
+                            <h3>Was 1976 Better Than 2026?</h3>
+
+                            <p>
+                                A historical comparison of economic conditions
+                                during the United States Bicentennial and
+                                Semiquincentennial, using indicators such as
+                                unemployment, inflation, interest rates, wages,
+                                and household financial pressure.
+                            </p>
+
+                            <div class="tag-list">
+                                <span>FRED</span>
+                                <span>Excel</span>
+                                <span>Power Query</span>
+                                <span>Economic Analysis</span>
+                            </div>
+
+                            <div class="project-links">
+                                <a
+                                    class="text-link"
+                                    href="projects/1976-vs-2026.html"
+                                >
+                                    Read the case study →
+                                </a>
+
+                                <a
+                                    class="text-link secondary-link"
+                                    href="downloads/1976-vs-2026-analysis.xlsx"
+                                >
+                                    Download workbook
+                                </a>
+                            </div>
+
+                        </div>
+                    </article>
+
+
+                    <!-- GDP -->
+                    <article class="project-card">
+
+                        <div class="project-image placeholder-image">
+                            <span>Global GDP project screenshot</span>
+                        </div>
+
+                        <div class="project-card-content">
+
+                            <div class="project-status">
+                                Data analysis project
+                            </div>
+
+                            <h3>Global GDP Analysis</h3>
+
+                            <p>
+                                An exploration of global economic output that
+                                compares total GDP with GDP per capita and
+                                examines how the interpretation changes when
+                                population is considered.
+                            </p>
+
+                            <div class="tag-list">
+                                <span>IMF Data</span>
+                                <span>Excel</span>
+                                <span>Power Query</span>
+                                <span>Visualization</span>
+                            </div>
+
+                            <div class="project-links">
+                                <a
+                                    class="text-link"
+                                    href="projects/gdp-analysis.html"
+                                >
+                                    Read the case study →
+                                </a>
+
+                                <a
+                                    class="text-link secondary-link"
+                                    href="downloads/global-gdp-analysis.xlsx"
+                                >
+                                    Download workbook
+                                </a>
+                            </div>
+
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Analytical Approach -->
+        <section class="section section-tinted">
+            <div class="container">
+
+                <div class="section-heading">
+                    <p class="eyebrow">Beyond the dashboard</p>
+
+                    <h2>How I Approach an Analysis</h2>
+
+                    <p>
+                        I treat analysis as a decision-making process, not just
+                        a technical exercise.
+                    </p>
+                </div>
+
+
+                <div class="approach-grid">
+
+                    <article class="approach-card">
+                        <span class="approach-number">01</span>
+
+                        <h3>Frame the question</h3>
+
+                        <p>
+                            Define the decision, research question, or business
+                            problem before selecting metrics or building
+                            visuals.
+                        </p>
+                    </article>
+
+
+                    <article class="approach-card">
+                        <span class="approach-number">02</span>
+
+                        <h3>Evaluate the evidence</h3>
+
+                        <p>
+                            Examine data sources, definitions, comparability,
+                            limitations, and the assumptions behind each
+                            measure.
+                        </p>
+                    </article>
+
+
+                    <article class="approach-card">
+                        <span class="approach-number">03</span>
+
+                        <h3>Build a reliable process</h3>
+
+                        <p>
+                            Clean, transform, validate, and structure the data
+                            so the analysis can be updated and reused.
+                        </p>
+                    </article>
+
+
+                    <article class="approach-card">
+                        <span class="approach-number">04</span>
+
+                        <h3>Communicate the meaning</h3>
+
+                        <p>
+                            Use visuals and narrative to explain what the
+                            findings mean, where uncertainty remains, and why
+                            the result matters.
+                        </p>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- About -->
+        <section class="section" id="about">
+            <div class="container about-grid">
+
+                <div>
+                    <p class="eyebrow">About me</p>
+
+                    <h2>
+                        Finance experience combined with analytical curiosity.
+                    </h2>
+                </div>
+
+                <div class="about-copy">
+                    <p>
+                        My background is in financial planning and analysis,
+                        accounting, reporting, and business decision support.
+                        Over time, I expanded that work through data modeling,
+                        visualization, automation, and independent economic
+                        research.
+                    </p>
+
+                    <p>
+                        I am especially interested in questions that require
+                        more than producing a number. I want to understand how
+                        the measure was constructed, whether the comparison is
+                        valid, what assumptions are being made, and how the
+                        result should influence a decision.
+                    </p>
+
+                    <p>
+                        This portfolio documents both the finished work and
+                        the reasoning behind it.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- Skills -->
+        <section class="section section-dark" id="skills">
+            <div class="container">
+
+                <div class="section-heading light-heading">
+                    <p class="eyebrow">Capabilities</p>
+
+                    <h2>Skills and Tools</h2>
+                </div>
+
+
+                <div class="skills-grid">
+
+                    <article class="skill-group">
+                        <h3>Finance</h3>
+                        <ul>
+                            <li>FP&amp;A</li>
+                            <li>Budgeting and forecasting</li>
+                            <li>Variance analysis</li>
+                            <li>Management reporting</li>
+                            <li>Scenario analysis</li>
+                        </ul>
+                    </article>
+
+
+                    <article class="skill-group">
+                        <h3>Analytics</h3>
+                        <ul>
+                            <li>Power BI</li>
+                            <li>DAX and data modeling</li>
+                            <li>Advanced Excel</li>
+                            <li>Power Query</li>
+                            <li>Data visualization</li>
+                        </ul>
+                    </article>
+
+
+                    <article class="skill-group">
+                        <h3>Research</h3>
+                        <ul>
+                            <li>Economic indicators</li>
+                            <li>FRED and public datasets</li>
+                            <li>Data-source evaluation</li>
+                            <li>Historical comparisons</li>
+                            <li>Analytical storytelling</li>
+                        </ul>
+                    </article>
+
+
+                    <article class="skill-group">
+                        <h3>Automation</h3>
+                        <ul>
+                            <li>Reusable data pipelines</li>
+                            <li>Refreshable reports</li>
+                            <li>Python</li>
+                            <li>VBA</li>
+                            <li>Workflow improvement</li>
+                        </ul>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Contact -->
+        <section class="section contact-section" id="contact">
+            <div class="container contact-content">
+
+                <p class="eyebrow">Connect</p>
+
+                <h2>Interested in my work?</h2>
+
+                <p>
+                    You can review the project case studies, explore the
+                    underlying workbooks, or contact me through GitHub or
+                    LinkedIn.
+                </p>
+
+                <div class="hero-actions contact-actions">
+
+                    <a
+                        class="button button-primary"
+                        href="https://github.com/vfrizzell"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        View GitHub
+                    </a>
+
+                    <!-- Replace # with your LinkedIn address -->
+                    <a
+                        class="button button-secondary"
+                        href="#"
+                    >
+                        View LinkedIn
+                    </a>
+
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container footer-content">
+
+            <p>
+                © 2026 Veronique Frizzell
+            </p>
+
+            <a href="#top">Back to top ↑</a>
+
+        </div>
+    </footer>
+
+</body>
+</html>
