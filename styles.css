@@ -1,0 +1,348 @@
+/* =========================
+   Design variables
+   ========================= */
+
+:root {
+    --color-navy: #102a43;
+    --color-navy-dark: #071a2b;
+    --color-blue: #1f5f8b;
+    --color-gold: #d29b35;
+
+    --color-text: #243746;
+    --color-muted: #5f6f7c;
+
+    --color-white: #ffffff;
+    --color-background: #f7f9fb;
+    --color-tinted: #edf3f7;
+    --color-border: #dce4ea;
+
+    --shadow-card:
+        0 18px 45px rgba(16, 42, 67, 0.09);
+
+    --border-radius-small: 8px;
+    --border-radius-medium: 16px;
+    --border-radius-large: 24px;
+
+    --container-width: 1180px;
+}
+
+
+/* =========================
+   Base styles
+   ========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    color: var(--color-text);
+    background: var(--color-background);
+    font-family:
+        Inter,
+        "Segoe UI",
+        Arial,
+        sans-serif;
+    line-height: 1.65;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+a {
+    color: inherit;
+}
+
+h1,
+h2,
+h3,
+p {
+    margin-top: 0;
+}
+
+h1,
+h2,
+h3 {
+    color: var(--color-navy);
+    line-height: 1.15;
+}
+
+h1 {
+    max-width: 800px;
+    margin-bottom: 24px;
+    font-size: clamp(2.7rem, 6vw, 5.2rem);
+    letter-spacing: -0.045em;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: clamp(2rem, 4vw, 3.25rem);
+    letter-spacing: -0.035em;
+}
+
+h3 {
+    margin-bottom: 14px;
+    font-size: 1.35rem;
+}
+
+.container {
+    width: min(calc(100% - 40px), var(--container-width));
+    margin-inline: auto;
+}
+
+.section {
+    padding: 100px 0;
+}
+
+.section-tinted {
+    background: var(--color-tinted);
+}
+
+.eyebrow {
+    margin-bottom: 16px;
+    color: var(--color-gold);
+    font-size: 0.78rem;
+    font-weight: 800;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+}
+
+
+/* =========================
+   Navigation
+   ========================= */
+
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 1px solid rgba(220, 228, 234, 0.8);
+    background: rgba(247, 249, 251, 0.94);
+    backdrop-filter: blur(14px);
+}
+
+.nav-container {
+    min-height: 74px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.site-logo {
+    width: 44px;
+    height: 44px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    color: var(--color-white);
+    background: var(--color-navy);
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.site-nav {
+    display: flex;
+    gap: 28px;
+}
+
+.site-nav a {
+    color: var(--color-text);
+    font-size: 0.93rem;
+    font-weight: 650;
+    text-decoration: none;
+}
+
+.site-nav a:hover,
+.site-nav a:focus {
+    color: var(--color-blue);
+}
+
+
+/* =========================
+   Hero
+   ========================= */
+
+.hero {
+    padding: 120px 0 110px;
+    background:
+        radial-gradient(
+            circle at 80% 20%,
+            rgba(210, 155, 53, 0.15),
+            transparent 24rem
+        ),
+        linear-gradient(
+            145deg,
+            #f9fbfc 0%,
+            #edf3f7 100%
+        );
+}
+
+.hero-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.65fr) minmax(280px, 0.75fr);
+    gap: 70px;
+    align-items: center;
+}
+
+.hero-description {
+    max-width: 730px;
+    margin-bottom: 32px;
+    color: var(--color-muted);
+    font-size: 1.18rem;
+}
+
+.hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+}
+
+.button {
+    display: inline-flex;
+    min-height: 50px;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 24px;
+    border: 2px solid transparent;
+    border-radius: var(--border-radius-small);
+    font-weight: 750;
+    text-decoration: none;
+    transition:
+        transform 180ms ease,
+        background-color 180ms ease,
+        color 180ms ease;
+}
+
+.button:hover,
+.button:focus {
+    transform: translateY(-2px);
+}
+
+.button-primary {
+    color: var(--color-white);
+    background: var(--color-navy);
+}
+
+.button-primary:hover,
+.button-primary:focus {
+    background: var(--color-blue);
+}
+
+.button-secondary {
+    border-color: var(--color-navy);
+    color: var(--color-navy);
+    background: transparent;
+}
+
+.button-secondary:hover,
+.button-secondary:focus {
+    color: var(--color-white);
+    background: var(--color-navy);
+}
+
+.hero-panel {
+    padding: 32px;
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    border-radius: var(--border-radius-large);
+    background: rgba(255, 255, 255, 0.82);
+    box-shadow: var(--shadow-card);
+}
+
+.panel-label {
+    color: var(--color-navy);
+    font-weight: 800;
+}
+
+.hero-skill-list {
+    margin: 0;
+    padding-left: 20px;
+    color: var(--color-muted);
+}
+
+.hero-skill-list li + li {
+    margin-top: 12px;
+}
+
+.hero-skill-list li::marker {
+    color: var(--color-gold);
+}
+
+
+/* =========================
+   Section headings
+   ========================= */
+
+.section-heading {
+    max-width: 720px;
+    margin-bottom: 48px;
+}
+
+.section-heading > p:last-child {
+    color: var(--color-muted);
+    font-size: 1.08rem;
+}
+
+
+/* =========================
+   Projects
+   ========================= */
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 30px;
+}
+
+.project-card {
+    overflow: hidden;
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius-medium);
+    background: var(--color-white);
+    box-shadow: var(--shadow-card);
+}
+
+.project-image {
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    background: #d9e5ed;
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.placeholder-image {
+    display: grid;
+    place-items: center;
+    padding: 20px;
+    color: var(--color-muted);
+    background:
+        linear-gradient(
+            135deg,
+            #dceaf2,
+            #f5e8ca
+        );
+    font-weight: 700;
+    text-align: center;
+}
+
+.project-card-content {
+    padding: 30px;
+}
+
+.project-status {
+    margin-bottom: 12px;
+    color: var(--color-blue);
+    font-size: 0.75rem;
+    font-weight: 800;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
